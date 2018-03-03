@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+msgid "List of available entries:"
+msgstr "Daftar entri yang tersedia:"
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Open API Functions access list"
+msgstr "Buka daftar akses fungsi API"
+
+msgid "User Name"
+msgstr "Nama user"
+
+msgid "API Service"
+msgstr "Servis API"
+
+msgid "Description"
+msgstr "Deskripsi"
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39603.8877294907" ReportOptions.Description.Text="" ReportOptions.LastChange="39609.9640621296" ReportOptions.MvcServiceName="GLS200" ReportOptions.MvcDescription="G/L Journal Entry" ReportOptions.Category="Financial Management\General Ledger" ScriptLanguage="PascalScript" ScriptText.Text="procedure Button1OnClick(Sender: TMvcComponent);&#13;&#10;begin&#13;&#10;  PerformUpdateState;                                      &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D2200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="GLS200VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="380" Left="265" Top="150" Width="703">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="8" Top="12" Width="78" Height="13" Dataset="TBParam" DataField="GLJHBCID" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit1" Left="92" Top="8" Width="101" Height="21" Dataset="TBParam" Color="-16777211" DataField="GLJHBCID" MaxLength="6" PasswordChar="0"/>
+    <TMvcLabelControl Name="Label1" Left="8" Top="36" Width="76" Height="13" Caption="List of Journals:" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="52" Width="680" Height="288" Dataset="TBList" Align="alNone" Anchors="15"/>
+    <TMvcButtonControl Name="Button1" Left="200" Top="8" Width="75" Height="25" Caption="Refresh" OnClick="Button1OnClick"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="GLS200ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="366" Left="265" Top="150" Width="634">
+    <TMvcDBFieldCaption Name="DBFieldCaption14" Left="304" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLJHFSPR" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption13" Left="196" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLJHFSYR" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="12" Width="78" Height="13" Dataset="TBInput" DataField="GLJHBCID" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit2" Left="96" Top="8" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHBCID" MaxLength="6" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="196" Top="8" Width="277" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHBCDS" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="12" Top="36" Width="78" Height="13" Dataset="TBInput" DataField="GLJHJEID" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="96" Top="32" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHJEID" MaxLength="6" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="12" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLJHJEDT" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBDateEditControl Name="DBDateEdit1" Left="96" Top="56" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHJEDT" MaxLength="0" PasswordChar="0" CalendarKind="ckDate"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit3" Left="244" Top="56" Width="57" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHFSYR" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit4" Left="352" Top="56" Width="57" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHFSPR" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="12" Top="84" Width="78" Height="13" Dataset="TBInput" DataField="GLJHJEDS" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="96" Top="80" Width="377" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHJEDS" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox1" Left="96" Top="104" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="GLJHJERV" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption6" Left="12" Top="156" Width="78" Height="13" Dataset="TBInput" DataField="GLJHDTCR" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBDateEditControl Name="DBDateEdit2" Left="96" Top="152" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHDTCR" MaxLength="0" PasswordChar="0" CalendarKind="ckDate"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption7" Left="200" Top="156" Width="78" Height="13" Dataset="TBInput" DataField="GLJHDTED" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBDateEditControl Name="DBDateEdit3" Left="284" Top="152" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHDTED" MaxLength="0" PasswordChar="0" CalendarKind="ckDate"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption8" Left="12" Top="180" Width="78" Height="13" Dataset="TBInput" DataField="GLJHSRLG" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit4" Left="96" Top="176" Width="29" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHSRLG" MaxLength="2" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit5" Left="128" Top="176" Width="29" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHSRTP" MaxLength="2" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption9" Left="12" Top="212" Width="78" Height="13" Dataset="TBInput" DataField="GLJHNTDB" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit6" Left="96" Top="208" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHNTDB" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption10" Left="12" Top="236" Width="78" Height="13" Dataset="TBInput" DataField="GLJHNTCR" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit7" Left="96" Top="232" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHNTCR" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption12" Left="12" Top="260" Width="78" Height="13" Dataset="TBInput" DataField="GLJHJEST" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBComboBoxControl Name="DBComboBox1" Left="96" Top="256" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLJHJEST" Items.Text="" Values.Text="" Style="lsEditFixedList" ItemIndex="-1"/>
+  </TMvcDialogPage>
+</TMvcReport>

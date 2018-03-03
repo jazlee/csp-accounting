@@ -1,0 +1,19 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+msgid "List of available MVC programs:"
+msgstr "Daftar program MVC yang tersedia:"
+
+msgid "Service Name"
+msgstr "Nama servis MVC"
+
+msgid "Description"
+msgstr "Deskripsi"
+
+msgid "Status"
+msgstr ""
+

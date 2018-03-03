@@ -1,0 +1,110 @@
+#
+# Copyright (c) 2009 PT. Ungaran Sari Garments. All rights reserved.
+#
+# This product and it's source code is protected by patents, copyright laws and
+# international copyright treaties, as well as other intellectual property
+# laws and treaties. The product is licensed, not sold.
+#
+# The source code and sample programs in this package or parts hereof
+# as well as the documentation shall not be copied, modified or redistributed
+# without permission, explicit or implied, of the author.
+#
+
+__author__    = 'Jaimy Azle'
+__version__   = '1.0'
+__copyright__ = 'Copyright (c) 2009 PT. UNGARAN SARI GARMENTS'
+
+from mvcsvc import *
+from elixir import *
+import datetime as dt
+import sqlalchemy as sa
+from validators import *
+from tbl import CMPLOC, CMPFAC, MSTARE
+
+class CMN125(MVCController):
+  """
+  Company Locations
+  """
+
+  _description = 'Company Locations'
+  _supported_functions = (MVCFuncNew, MVCFuncOpen, MVCFuncShow, MVCFuncCopy, MVCFuncDelete)
+  _model_binder = MVCModelBinder(CMPLOC)
+
+  CMLOLCNO  = MVCField(MVCTypeField + MVCTypeList, String(3), label='Loc', charcase=ecUpperCase)
+  CMLOLCNM  = MVCField(MVCTypeField + MVCTypeList, String(24), label='Name', synchronized=True)
+  CMLOLCDS  = MVCField(MVCTypeField + MVCTypeList, String(48), label='Description')
+  CMLOFANO  = MVCField(MVCTypeField + MVCTypeList, String(3), label='Facility', synchronized=True, browseable=True, charcase = ecUpperCase)
+  CMLOFANM  = MVCField(MVCTypeField + MVCTypeList, String(24), label='Facility', enabled=False)
+  CMLOADR1  = MVCField(MVCTypeField, String(48), label='Address')
+  CMLOADR2  = MVCField(MVCTypeField, String(48), label='Address')
+  CMLOADR3  = MVCField(MVCTypeField, String(48), label='Address')
+  CMLOZIPC  = MVCField(MVCTypeField, String(48), label='Zip')
+  CMLOARID  = MVCField(MVCTypeField, String(6), label='Area', synchronized=True, browseable=True, charcase = ecUpperCase)
+  CMLOARNM  = MVCField(MVCTypeField, String(16), label='Area', enabled=False)
+  CMLOSTID  = MVCField(MVCTypeField, String(6), label='State', synchronized=True, browseable=True, charcase = ecUpperCase)
+  CMLOSTNM  = MVCField(MVCTypeField, String(16), label='State', enabled=False)
+  CMLOCTID  = MVCField(MVCTypeField, String(2), label='Country', synchronized=True, browseable=True, charcase = ecUpperCase)
+  CMLOCTNM  = MVCField(MVCTypeField, String(16), label='Country', enabled=False)
+  CMLOPHN1  = MVCField(MVCTypeField, String(24), label='Phone')
+  CMLOPHN2  = MVCField(MVCTypeField, String(24), label='Phone')
+  CMLOFAX1  = MVCField(MVCTypeField, String(24), label='Fax')
+  CMLOFAX2  = MVCField(MVCTypeField, String(24), label='Fax')
+  CMLOXEML  = MVCField(MVCTypeField, String(32), label='email')
+  CMLOWURL  = MVCField(MVCTypeField, String(48), label='URL')
+
+  def lookupView(self, mvcsession, fieldName):
+    '''Define lookup metadata for specified field'''
+    ret = MVCLookupDef('','')
+    if (fieldName == 'CMLOFANO'):
+      ret.svcname = 'CMN120'
+      ret.retfield = 'CMFAFANO'
+    if (fieldName == 'CMLOARID'):
+      ret.svcname = 'CMN020'
+      ret.retfield = 'CMARIDCD'
+    if (fieldName == 'CMLOSTID'):
+      ret.svcname = 'CMN030'
+      ret.params = {'CMPRCTCD':'%f:CMLOCTID'}
+      ret.retfield = 'CMSTIDCD'
+    if (fieldName == 'CMLOCTID'):
+      ret.svcname = 'CMN010'
+      ret.retfield = 'CMCTIDCD'
+    return ret
+
+  def synchronizeData(self, mvcsession, fieldName):
+    '''Synchronize data retrieved from user input'''
+    fields = mvcsession.entryDataset.FieldsAsDict()
+    if (fieldName == 'CMLOLCNM') and (fields['CMLOLCNM'] is not None) and \
+       (fields['CMLOLCDS'] is None):
+      mvcsession.entryDataset.Edit()
+      mvcsession.entryDataset.SetFieldValue('CMLOLCDS', fields['CMLOLCNM'])
+      mvcsession.entryDataset.Post()
+    elif (fieldName == 'CMLOFANO'):
+      obj = CMPFAC.get( fields['CMLOFANO'] )
+      mvcsession.entryDataset.Edit()
+      if obj:
+        mvcsession.entryDataset.SetFieldValue('CMLOFANO', obj.CMFAFANO)
+        mvcsession.entryDataset.SetFieldValue('CMLOFANM', obj.CMFAFANM)
+      else:
+        mvcsession.entryDataset.SetFieldValue('CMLOFANO', None)
+        mvcsession.entryDataset.SetFieldValue('CMLOFANM', None)
+      mvcsession.entryDataset.Post()
+    elif (fieldName == 'CMLOARID') and (fields['CMLOARID'] not in (None, '')):
+      obj = MSTARE.get(fields['CMLOARID'])
+      if obj:
+        mvcsession.entryDataset.Edit()
+        mvcsession.entryDataset.SetFieldValue('CMLOARNM', obj.CMARIDNM)
+        mvcsession.entryDataset.Post()
+    elif (fieldName == 'CMLOSTID') and (fields['CMLOSTID'] not in (None, '')):
+      obj = country.subdivisions.get(code = fields['CMLOSTID'])
+      if obj:
+        mvcsession.entryDataset.Edit()
+        mvcsession.entryDataset.SetFieldValue('CMLOSTNM', obj.name)
+        mvcsession.entryDataset.Post()
+    elif (fieldName == 'CMLOCTID') and (fields['CMLOCTID'] not in (None, '')):
+      ctr = country.countries.get(alpha2 = fields['CMLOCTID'])
+      if ctr:
+        mvcsession.entryDataset.Edit()
+        mvcsession.entryDataset.SetFieldValue('CMLOCTNM', ctr.name)
+        mvcsession.entryDataset.Post()
+    return mvcsession
+

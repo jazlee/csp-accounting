@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TMvcReport Version="4.7.181" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39562.9352446759" ReportOptions.Description.Text="" ReportOptions.LastChange="40148.3677045255" ReportOptions.MvcServiceName="CMN020" ReportOptions.MvcDescription="States" ReportOptions.Category="System Foundation\Common Basic Data" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Button1OnClick(Sender: TMvcComponent);&#13;&#10;begin&#13;&#10;  PerformUpdateState;                                      &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="0844617461736574730101062820446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220001062620446174615365743D2254424C6973742220446174615365744E616D653D2254424C697374220001062820446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="CMSTCONO=CMSTCONO&#13;&#10;CMSTIDCD=CMSTIDCD&#13;&#10;CMSTIDNM=CMSTIDNM&#13;&#10;CMSTIDDS=CMSTIDDS" BCDToCurrency="False" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="CMSTCONO=CMSTCONO&#13;&#10;CMSTIDCD=CMSTIDCD&#13;&#10;CMSTIDNM=CMSTIDNM&#13;&#10;CMSTIDDS=CMSTIDDS" BCDToCurrency="False" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="CMN020VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" ClientHeight="251" Left="265" Top="150" ClientWidth="515">
+    <TMvcLabelControl Name="Label1" Left="8" Top="12" Width="62" Height="13" ShowHint="True" Caption="List of State:" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="28" Width="500" Height="212" ShowHint="True" Dataset="TBList" Align="alNone" Anchors="15" ColumnAutoWidth="True"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="CMN020ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" ClientHeight="235" Left="265" Top="150" ClientWidth="455">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="12" Top="16" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMSTIDCD" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="96" Top="12" Width="69" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMSTIDCD" MaxLength="6" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="40" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMSTIDNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="96" Top="36" Width="193" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMSTIDNM" MaxLength="16" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="12" Top="64" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMSTIDDS" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="96" Top="60" Width="325" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMSTIDDS" MaxLength="32" PasswordChar="0"/>
+  </TMvcDialogPage>
+</TMvcReport>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39600.0244934491" ReportOptions.Description.Text="" ReportOptions.LastChange="39600.0300484606" ReportOptions.MvcServiceName="GLS070" ReportOptions.MvcDescription="G/L Batch Numbering Rule" ReportOptions.Category="Financial Management\Configuration" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D2200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="GLS070VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="351" Left="265" Top="150" Width="578">
+    <TMvcLabelControl Name="Label1" Left="8" Top="12" Width="139" Height="13" Caption="G/L Batch Numbering Option:" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="28" Width="556" Height="284" Dataset="TBList" Align="alNone" Anchors="15"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="GLS070ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="244" Left="265" Top="150" Width="475">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="12" Top="12" Width="78" Height="13" Dataset="TBInput" DataField="GLBCNOID" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="112" Top="8" Width="45" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLBCNOID" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="36" Width="78" Height="13" Dataset="TBInput" DataField="GLBCNONM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="112" Top="32" Width="305" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLBCNONM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="12" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLBCMINO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="112" Top="56" Width="89" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLBCMINO" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="204" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLBCMXNO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit4" Left="304" Top="56" Width="89" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLBCMXNO" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="12" Top="84" Width="78" Height="13" Dataset="TBInput" DataField="GLBCLSNO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit5" Left="112" Top="80" Width="89" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLBCLSNO" MaxLength="6" PasswordChar="0"/>
+  </TMvcDialogPage>
+</TMvcReport>

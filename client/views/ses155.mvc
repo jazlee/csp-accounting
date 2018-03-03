@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39511.8789650231" ReportOptions.Description.Text="" ReportOptions.LastChange="39544.8597204051" ReportOptions.ModuleType="mtViewer" ReportOptions.MvcServiceName="SES155" ReportOptions.MvcDescription="API Function Access List" ReportOptions.Category="System Foundation\Security Management" ReportOptions.Visible="False" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;procedure Button1OnClick(Sender: TMvcComponent);&#13;&#10;begin&#13;&#10;  PerformUpdateState;                                            &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E7075742200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="SES155VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="285" Left="265" Top="150" Width="617">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="8" Top="12" Width="78" Height="13" Dataset="TBParam" Alignment="taRightJustify" DataField="UAFUSRNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="92" Top="8" Width="105" Height="21" Dataset="TBParam" Color="-16777211" DataField="UAFUSRNM" MaxLength="24" PasswordChar="0" CharCase="ecUpperCase"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="204" Top="12" Width="78" Height="13" Dataset="TBParam" Alignment="taRightJustify" DataField="UAFOBJNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="288" Top="8" Width="105" Height="21" Dataset="TBParam" Color="-16777211" DataField="UAFOBJNM" MaxLength="32" PasswordChar="0" CharCase="ecUpperCase"/>
+    <TMvcButtonControl Name="Button1" Left="400" Top="4" Width="75" Height="25" Caption="Refresh" OnClick="Button1OnClick"/>
+    <TMvcLabelControl Name="Label1" Left="8" Top="36" Width="164" Height="13" Caption="List of function access:" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="52" Width="596" Height="192" Dataset="TBList" Align="alNone" Anchors="15"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="SES155ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="203" Left="265" Top="150" Width="600">
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="8" Top="12" Width="78" Height="13" Dataset="TBInput" Alignment="taRightJustify" DataField="UAFUSRNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="92" Top="8" Width="105" Height="21" Dataset="TBInput" Color="-16777211" DataField="UAFUSRNM" MaxLength="24" PasswordChar="0" CharCase="ecUpperCase"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="8" Top="36" Width="78" Height="13" Dataset="TBInput" Alignment="taRightJustify" DataField="UAFOBJNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit4" Left="92" Top="32" Width="105" Height="21" Dataset="TBInput" Color="-16777211" DataField="UAFOBJNM" MaxLength="32" PasswordChar="0" CharCase="ecUpperCase"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="8" Top="60" Width="78" Height="13" Dataset="TBInput" Alignment="taRightJustify" DataField="UAFFNCNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit1" Left="92" Top="56" Width="201" Height="21" Dataset="TBInput" Color="-16777211" DataField="UAFFNCNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox1" Left="8" Top="88" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="UAFFNCSL" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox2" Left="112" Top="88" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="UAFFNCIN" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox3" Left="216" Top="88" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="UAFFNCUP" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox4" Left="320" Top="88" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="UAFFNCDL" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox5" Left="424" Top="88" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="UAFFNCEX" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+  </TMvcDialogPage>
+</TMvcReport>

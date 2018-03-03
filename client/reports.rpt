@@ -1,0 +1,479 @@
+object xfrDirectoryItem1: TxfrDirectoryItem
+  ItemType = itmRoot
+  TimeStamp = 39643.618158275470000000
+  ReportName = 'Folder List'
+  ReportAttr = [ftReadOnly]
+  Deleted = False
+  NextID = 39
+  object xfrDirectoryItem1: TxfrDirectoryItem
+    ItemType = itmDirectory
+    TimeStamp = 39643.640387361110000000
+    ReportName = 'Financial Management'
+    ReportAttr = []
+    Deleted = False
+    object xfrDirectoryItem2: TxfrDirectoryItem
+      ItemType = itmDirectory
+      TimeStamp = 39643.640537106480000000
+      ReportName = 'General Ledger'
+      ReportAttr = []
+      Deleted = False
+      object xfrReportItem1: TxfrReportItem
+        ItemType = itmReport
+        TimeStamp = 40086.811364467590000000
+        ReportName = 'Trial Balance'
+        ReportAttr = []
+        Deleted = False
+        ReportID = 0
+        FileContent = 
+          '<?xml version="1.0" encoding="utf-8" standalone="no"?>'#13#10'<TfrxRep' +
+          'ort Version="4.7.181" DotMatrixReport="False" IniFile="\Software' +
+          '\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom' +
+          '="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0' +
+          '" ReportOptions.CreateDate="39115.6589597801" ReportOptions.Desc' +
+          'ription.Text="" ReportOptions.LastChange="40086.811364294" Scrip' +
+          'tLanguage="PascalScript" ScriptText.Text="var&#13;&#10;  AllAcct' +
+          ', ShowZero: Integer;&#13;&#10;  AcctFrom, AcctTo: String;&#13;&#' +
+          '10;  ShowProv, ShowFuncCR: integer;&#13;&#10;  CurrCode: String;' +
+          '                                           &#13;&#10;    &#13;&#' +
+          '10;procedure Button1OnClick(Sender: TfrxComponent);&#13;&#10;beg' +
+          'in                      &#13;&#10;  if CheckBox1.checked then&#1' +
+          '3;&#10;  begin              &#13;&#10;    AllAcct := 1;  &#13;&#' +
+          '10;    AcctFrom := BrowseableEdit1.Text;&#13;&#10;    AcctTo := ' +
+          'BrowseableEdit2.Text;            &#13;&#10;  end else&#13;&#10; ' +
+          '   AllAcct := 0;&#13;&#10;  ShowZero := 0;                      ' +
+          '                    &#13;&#10;  if CheckBox2.Checked then&#13;&#' +
+          '10;    ShowZero := 1;&#13;&#10;  CurrCode := BrowseableEdit3.Tex' +
+          't;           &#13;&#10;  ShowProv := 0;      &#13;&#10;  if Chec' +
+          'kBox3.Checked then&#13;&#10;    ShowProv := 1;&#13;&#10;  ShowFu' +
+          'ncCR := 1;&#13;&#10;  if not CheckBox4.Checked then&#13;&#10;   ' +
+          ' ShowFuncCR := 0;&#13;&#10;  TBReport.Prepare;&#13;&#10;  TBRepo' +
+          'rt.ParamByName('#39'GLPRVWST'#39').Value := AllAcct;&#13;&#10;  TBReport' +
+          '.ParamByName('#39'GLPRACFR'#39').Value := AcctFrom;&#13;&#10;  TBReport.' +
+          'ParamByName('#39'GLPRACTO'#39').Value := AcctTo;&#13;&#10;  TBReport.Par' +
+          'amByName('#39'GLPRACVS'#39').Value := ShowZero;&#13;&#10;  TBReport.Para' +
+          'mByName('#39'GLPRACPV'#39').Value := ShowProv;&#13;&#10;  TBReport.Param' +
+          'ByName('#39'GLPRFNCR'#39').Value := ShowFuncCR;&#13;&#10;  TBReport.Para' +
+          'mByName('#39'GLPRCUCD'#39').Value := CurrCode;                          ' +
+          '                          &#13;&#10;end;&#13;&#10;&#13;&#10;proc' +
+          'edure CheckBox1OnClick(Sender: TfrxComponent);&#13;&#10;begin&#1' +
+          '3;&#10;  BrowseableEdit1.Enabled := not CheckBox1.Checked;&#13;&' +
+          '#10;  BrowseableEdit2.Enabled := not CheckBox1.Checked;      &#1' +
+          '3;&#10;end;&#13;&#10;&#13;&#10;procedure CheckBox4OnClick(Sender' +
+          ': TfrxComponent);&#13;&#10;begin&#13;&#10;  BrowseableEdit3.Enab' +
+          'led := not CheckBox4.Checked;                                   ' +
+          '                                        &#13;&#10;end;&#13;&#10;' +
+          '&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C656674021' +
+          '503546F7002090844617461736574730101062A20446174615365743D2254425' +
+          '265706F72742220446174615365744E616D653D2254425265706F72742200000' +
+          '95661726961626C65730100055374796C650100">'#13#10'  <TfrxDataPage Name=' +
+          '"Data" Height="1000" Left="0" Top="0" Width="1000">'#13#10'    <TfrxEC' +
+          'FAPIObject Name="TBReport" UserName="TBReport" CloseDataSource="' +
+          'True" FieldAliases.Text="GLBLSMYR=GLBLSMYR&#13;&#10;GLBLSMDT=GLB' +
+          'LSMDT&#13;&#10;GLBLACFM=GLBLACFM&#13;&#10;GLBLACNM=GLBLACNM&#13;' +
+          '&#10;GLBLNTBL=GLBLNTBL&#13;&#10;GLBLDBBL=GLBLDBBL&#13;&#10;GLBLC' +
+          'RBL=GLBLCRBL" BCDToCurrency="False" APIObjectName="GLS300API" AP' +
+          'IMethodName="TRIALBALANCE" PropData="05704C656674022C0470546F700' +
+          '2140A506172616D657465727301010625204E616D653D22474C5052565753542' +
+          '22044617461547970653D226674496E74656765722200010624204E616D653D2' +
+          '2474C505241434652222044617461547970653D226674537472696E672200010' +
+          '624204E616D653D22474C50524143544F222044617461547970653D226674537' +
+          '472696E672200010625204E616D653D22474C505241435653222044617461547' +
+          '970653D226674496E74656765722200010625204E616D653D22474C505241435' +
+          '056222044617461547970653D226674496E74656765722200010625204E616D6' +
+          '53D22474C5052464E4352222044617461547970653D226674496E74656765722' +
+          '200010624204E616D653D22474C505243554344222044617461547970653D226' +
+          '674537472696E67220000"/>'#13#10'  </TfrxDataPage>'#13#10'  <TfrxReportPage N' +
+          'ame="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeig' +
+          'ht="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargi' +
+          'n="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text=""' +
+          ' HGuides.Text="" VGuides.Text="">'#13#10'    <TfrxReportTitle Name="Re' +
+          'portTitle1" Height="79.37013" Left="0" Top="18.89765" Width="104' +
+          '6.92981">'#13#10'      <TfrxMemoView Name="CMCPCONM" Left="7.55906" To' +
+          'p="3.77953" Width="960.00062" Height="26.45671" ShowHint="False"' +
+          ' DisplayFormat.DecimalSeparator="." Font.Charset="1" Font.Color=' +
+          '"-16777208" Font.Height="-24" Font.Name="Arial" Font.Style="0" H' +
+          'Align="haCenter" ParentFont="False" Text="[CMCPCODS]"/>'#13#10'      <' +
+          'TfrxMemoView Name="Memo2" Left="11.33859" Top="11.33859" Width="' +
+          '64.25201" Height="18.89765" ShowHint="False" DisplayFormat.Decim' +
+          'alSeparator="." Font.Charset="1" Font.Color="-16777208" Font.Hei' +
+          'ght="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Te' +
+          'xt="Date:"/>'#13#10'      <TfrxMemoView Name="Date" Left="83.14966" To' +
+          'p="11.33859" Width="79.37013" Height="18.89765" ShowHint="False"' +
+          ' DisplayFormat.DecimalSeparator="." Font.Charset="1" Font.Color=' +
+          '"-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" P' +
+          'arentFont="False" Text="[Date] [Time]"/>'#13#10'    </TfrxReportTitle>' +
+          #13#10'    <TfrxMasterData Name="MasterData1" Height="22.67718" Left=' +
+          '"0" Top="204.09462" Width="1046.92981" ColumnWidth="0" ColumnGap' +
+          '="0" DataSet="TBReport" DataSetName="TBReport" RowCount="0">'#13#10'  ' +
+          '    <TfrxMemoView Name="ECFAPIObject1GLBLACFM" Left="7.55906" To' +
+          'p="0" Width="222.99227" Height="18.89765" ShowHint="False" DataF' +
+          'ield="GLBLACFM" DataSet="TBReport" DataSetName="TBReport" Font.C' +
+          'harset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="A' +
+          'rial" Font.Style="0" ParentFont="False" Text="[TBReport.&#34;GLB' +
+          'LACFM&#34;]"/>'#13#10'      <TfrxMemoView Name="ECFAPIObject1GLBLACNM"' +
+          ' Left="238.11039" Top="0" Width="385.51206" Height="18.89765" Sh' +
+          'owHint="False" DataField="GLBLACNM" DataSet="TBReport" DataSetNa' +
+          'me="TBReport" Font.Charset="1" Font.Color="-16777208" Font.Heigh' +
+          't="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text' +
+          '="[TBReport.&#34;GLBLACNM&#34;]"/>'#13#10'      <TfrxMemoView Name="EC' +
+          'FAPIObject1GLBLDBBL" Left="631.18151" Top="0" Width="173.85838" ' +
+          'Height="18.89765" ShowHint="False" DataField="GLBLDBBL" DataSet=' +
+          '"TBReport" DataSetName="TBReport" DisplayFormat.DecimalSeparator' +
+          '="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumer' +
+          'ic" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Fo' +
+          'nt.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="Fals' +
+          'e" Text="[TBReport.&#34;GLBLDBBL&#34;]"/>'#13#10'      <TfrxMemoView N' +
+          'ame="ECFAPIObject1GLBLCRBL" Left="808.81942" Top="0" Width="173.' +
+          '85838" Height="18.89765" ShowHint="False" DataField="GLBLCRBL" D' +
+          'ataSet="TBReport" DataSetName="TBReport" DisplayFormat.DecimalSe' +
+          'parator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="' +
+          'fkNumeric" Font.Charset="1" Font.Color="-16777208" Font.Height="' +
+          '-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFon' +
+          't="False" Text="[TBReport.&#34;GLBLCRBL&#34;]"/>'#13#10'    </TfrxMast' +
+          'erData>'#13#10'    <TfrxPageFooter Name="PageFooter1" Height="22.67718' +
+          '" Left="0" Top="362.83488" Width="1046.92981">'#13#10'      <TfrxMemoV' +
+          'iew Name="Memo1" Left="967.55968" Top="0" Width="75.5906" Height' +
+          '="18.89765" ShowHint="False" HAlign="haRight" Text="[Page#]"/>'#13#10 +
+          '    </TfrxPageFooter>'#13#10'    <TfrxHeader Name="Header1" Height="22' +
+          '.67718" Left="0" Top="158.74026" Width="1046.92981" ReprintOnNew' +
+          'Page="True">'#13#10'      <TfrxMemoView Name="Memo3" Left="11.33859" T' +
+          'op="0" Width="219.21274" Height="18.89765" ShowHint="False" Disp' +
+          'layFormat.DecimalSeparator="." Font.Charset="1" Font.Color="-167' +
+          '77208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.' +
+          'Typ="8" ParentFont="False" Text="Acct. Number"/>'#13#10'      <TfrxMem' +
+          'oView Name="Memo4" Left="238.11039" Top="0" Width="385.51206" He' +
+          'ight="18.89765" ShowHint="False" DisplayFormat.DecimalSeparator=' +
+          '"." Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Fo' +
+          'nt.Name="Arial" Font.Style="1" Frame.Typ="8" ParentFont="False" ' +
+          'Text="Description"/>'#13#10'      <TfrxMemoView Name="Memo5" Left="631' +
+          '.18151" Top="0" Width="173.85838" Height="18.89765" ShowHint="Fa' +
+          'lse" DisplayFormat.DecimalSeparator="." Font.Charset="1" Font.Co' +
+          'lor="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="' +
+          '1" Frame.Typ="8" HAlign="haCenter" ParentFont="False" Text="Debi' +
+          't"/>'#13#10'      <TfrxMemoView Name="Memo6" Left="808.81942" Top="0" ' +
+          'Width="173.85838" Height="18.89765" ShowHint="False" DisplayForm' +
+          'at.DecimalSeparator="." Font.Charset="1" Font.Color="-16777208" ' +
+          'Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="8"' +
+          ' HAlign="haCenter" ParentFont="False" Text="Credit"/>'#13#10'    </Tfr' +
+          'xHeader>'#13#10'    <TfrxFooter Name="Footer1" Height="52.91342" Left=' +
+          '"0" Top="249.44898" Width="1046.92981">'#13#10'      <TfrxMemoView Nam' +
+          'e="Memo7" Left="529.1342" Top="0" Width="94.48825" Height="18.89' +
+          '765" ShowHint="False" DisplayFormat.DecimalSeparator="." Font.Ch' +
+          'arset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Ar' +
+          'ial" Font.Style="1" ParentFont="False" Text="Total"/>'#13#10'      <Tf' +
+          'rxMemoView Name="Memo8" Left="631.18151" Top="0" Width="173.8583' +
+          '8" Height="18.89765" ShowHint="False" DisplayFormat.DecimalSepar' +
+          'ator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkN' +
+          'umeric" Font.Charset="1" Font.Color="-16777208" Font.Height="-13' +
+          '" Font.Name="Arial" Font.Style="1" Frame.Typ="12" HAlign="haRigh' +
+          't" ParentFont="False" Text="[SUM(&#60;TBReport.&#34;GLBLDBBL&#34' +
+          ';&#62;,MasterData1)]"/>'#13#10'      <TfrxMemoView Name="Memo9" Left="' +
+          '812.59895" Top="0" Width="173.85838" Height="18.89765" ShowHint=' +
+          '"False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatS' +
+          'tr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.' +
+          'Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style' +
+          '="1" Frame.Typ="12" HAlign="haRight" ParentFont="False" Text="[S' +
+          'UM(&#60;TBReport.&#34;GLBLCRBL&#34;&#62;,MasterData1)]"/>'#13#10'     ' +
+          ' <TfrxMemoView Name="Memo10" Left="498.89796" Top="26.45671" Wid' +
+          'th="124.72449" Height="18.89765" ShowHint="False" DisplayFormat.' +
+          'DecimalSeparator="." Font.Charset="1" Font.Color="-16777208" Fon' +
+          't.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="Fals' +
+          'e" Text="Net Income (Loss)"/>'#13#10'      <TfrxMemoView Name="Memo12"' +
+          ' Left="812.59895" Top="26.45671" Width="173.85838" Height="18.89' +
+          '765" ShowHint="False" DisplayFormat.DecimalSeparator="." Display' +
+          'Format.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Cha' +
+          'rset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Ari' +
+          'al" Font.Style="1" Frame.Typ="12" HAlign="haRight" ParentFont="F' +
+          'alse" Text="[SUM(&#60;TBReport.&#34;GLBLDBBL&#34;&#62;,MasterDat' +
+          'a1) - SUM(&#60;TBReport.&#34;GLBLCRBL&#34;&#62;,MasterData1)]"/>' +
+          #13#10'    </TfrxFooter>'#13#10'  </TfrxReportPage>'#13#10'  <TfrxDialogPage Name' +
+          '="DialogPage1" Font.Charset="1" Font.Color="0" Font.Height="-11"' +
+          ' Font.Name="Tahoma" Font.Style="0" BorderStyle="bsDialog" Captio' +
+          'n="Report Options" ClientHeight="219" Left="352" Top="114" Clien' +
+          'tWidth="400">'#13#10'    <TfrxLabelControl Name="Label1" Left="8" Top=' +
+          '"8" Width="135" Height="13" ShowHint="True" Caption="Trial Balan' +
+          'ce Report Option:" Color="-16777201"/>'#13#10'    <TfrxCheckBoxControl' +
+          ' Name="CheckBox1" Left="8" Top="28" Width="97" Height="17" ShowH' +
+          'int="True" Caption="All Account:" Checked="True" State="cbsCheck' +
+          'ed" WordWrap="True" Color="-16777201" OnClick="CheckBox1OnClick"' +
+          '/>'#13#10'    <TfrxLabelControl Name="Label2" Left="44" Top="52" Width' +
+          '="70" Height="13" ShowHint="True" Caption="From Account:" Color=' +
+          '"-16777201"/>'#13#10'    <TfrxLabelControl Name="Label3" Left="200" To' +
+          'p="52" Width="58" Height="13" ShowHint="True" Caption="To Accoun' +
+          't:" Color="-16777201"/>'#13#10'    <TfrxBrowseableEditControl Name="Br' +
+          'owseableEdit1" Left="44" Top="68" Width="150" Height="21" Enable' +
+          'd="False" ShowHint="True" Color="-16777211" MaxLength="0" Passwo' +
+          'rdChar="0" ServiceName="GLS450" ReturnFieldName="GLACACFM"/>'#13#10'  ' +
+          '  <TfrxBrowseableEditControl Name="BrowseableEdit2" Left="200" T' +
+          'op="68" Width="150" Height="21" Enabled="False" ShowHint="True" ' +
+          'Color="-16777211" MaxLength="0" PasswordChar="0" ServiceName="GL' +
+          'S450" ReturnFieldName="GLACACFM"/>'#13#10'    <TfrxButtonControl Name=' +
+          '"Button1" Left="228" Top="176" Width="75" Height="25" ShowHint="' +
+          'True" Caption="OK" ModalResult="1" OnClick="Button1OnClick"/>'#13#10' ' +
+          '   <TfrxCheckBoxControl Name="CheckBox2" Left="8" Top="96" Width' +
+          '="161" Height="17" ShowHint="True" Caption="Show Zero Summary" C' +
+          'olor="-16777201"/>'#13#10'    <TfrxCheckBoxControl Name="CheckBox3" Le' +
+          'ft="8" Top="120" Width="161" Height="17" ShowHint="True" Caption' +
+          '="Provisional Summary" WordWrap="True" Color="-16777201"/>'#13#10'    ' +
+          '<TfrxCheckBoxControl Name="CheckBox4" Left="8" Top="144" Width="' +
+          '161" Height="17" ShowHint="True" Caption="Functional Currency" C' +
+          'hecked="True" State="cbsChecked" WordWrap="True" Color="-1677720' +
+          '1" OnClick="CheckBox4OnClick"/>'#13#10'    <TfrxLabelControl Name="Lab' +
+          'el4" Left="200" Top="144" Width="64" Height="13" ShowHint="True"' +
+          ' Caption="Currency Cd:" Color="-16777201"/>'#13#10'    <TfrxBrowseable' +
+          'EditControl Name="BrowseableEdit3" Left="276" Top="140" Width="6' +
+          '2" Height="21" Enabled="False" ShowHint="True" Color="-16777211"' +
+          ' MaxLength="0" PasswordChar="0" ServiceName="CMN040" ReturnField' +
+          'Name="CMCRCUCD"/>'#13#10'    <TfrxButtonControl Name="Button2" Left="3' +
+          '08" Top="176" Width="75" Height="25" ShowHint="True" Caption="Ca' +
+          'ncel" ModalResult="2"/>'#13#10'  </TfrxDialogPage>'#13#10'</TfrxReport>'#13#10'2'#8220'~' +
+          #188'2'#8220'~'#192'2'#8220'~'#196'2'#8220'~'#200'2'#8220'~'#204'2'#8220'~'#208'2'#8220'~'#212'2'#8220'~'#216'2'#8220'~'#220'2'#8220'~'#224'2'#8220'~'#228'2'#8220'~'#232'2'#8220'~'#236'2'#8220'~'#240'2'#8220'~'#244'2'#8220'~'#248'2'#8220'~' +
+          #252'2'#8220'~'
+        InternalID = 32
+      end
+      object xfrReportItem3: TxfrReportItem
+        ItemType = itmReport
+        TimeStamp = 39644.889008784720000000
+        ReportName = 'Test Trial Balance'
+        ReportAttr = []
+        Deleted = False
+        ReportID = 0
+        FileContent = 
+          '<?xml version="1.0" encoding="utf-8"?>'#13#10'<TfrxReport Version="4.5' +
+          '" DotMatrixReport="False" IniFile="\Software\Fast Reports" Previ' +
+          'ewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Pr' +
+          'inter="Default" PrintOptions.PrintOnSheet="0" ReportOptions.Crea' +
+          'teDate="39115.6589597801" ReportOptions.Description.Text="" Repo' +
+          'rtOptions.LastChange="39644.8890087847" ScriptLanguage="PascalSc' +
+          'ript" ScriptText.Text="&#13;&#10;procedure CheckBox1OnClick(Send' +
+          'er: TfrxComponent);&#13;&#10;begin&#13;&#10;  BrowseableEdit1.En' +
+          'abled := Checkbox1.Checked = False;&#13;&#10;  BrowseableEdit2.E' +
+          'nabled := Checkbox1.Checked = False;      &#13;&#10;end;&#13;&#1' +
+          '0;&#13;&#10;procedure CheckBox4OnClick(Sender: TfrxComponent);&#' +
+          '13;&#10;begin&#13;&#10;  BrowseableEdit3.Enabled := CheckBox4.Ch' +
+          'ecked = False;                                                  ' +
+          '                                                                ' +
+          '  &#13;&#10;end;&#13;&#10;&#13;&#10;procedure Button1OnClick(Sen' +
+          'der: TfrxComponent);&#13;&#10;begin&#13;&#10;  // skr kita setup' +
+          ' parameternya...&#13;&#10;  if Checkbox1.Checked then           ' +
+          '                                             &#13;&#10;    TBRep' +
+          'ort.ParamByName('#39'GLPRVWST'#39').Value := 1     &#13;&#10;  else&#13;' +
+          '&#10;    TBReport.ParamByName('#39'GLPRVWST'#39').Value := 0;  &#13;&#10' +
+          ';  TBReport.ParamByName('#39'GLPRACFR'#39').Value := BrowseableEdit1.Tex' +
+          't;&#13;&#10;  TBReport.ParamByName('#39'GLPRACTO'#39').Value := Browseab' +
+          'leEdit2.Text;&#13;&#10;  if Checkbox2.Checked then              ' +
+          '                                          &#13;&#10;    TBReport' +
+          '.ParamByName('#39'GLPRACVS'#39').Value := 1     &#13;&#10;  else&#13;&#1' +
+          '0;    TBReport.ParamByName('#39'GLPRACVS'#39').Value := 0;&#13;&#10;  if' +
+          ' Checkbox3.Checked then                                         ' +
+          '               &#13;&#10;    TBReport.ParamByName('#39'GLPRACPV'#39').Va' +
+          'lue := 1     &#13;&#10;  else&#13;&#10;    TBReport.ParamByName(' +
+          #39'GLPRACPV'#39').Value := 0;&#13;&#10;  if Checkbox4.Checked then    ' +
+          '                                                    &#13;&#10;  ' +
+          '  TBReport.ParamByName('#39'GLPRFNCR'#39').Value := 1     &#13;&#10;  el' +
+          'se&#13;&#10;    TBReport.ParamByName('#39'GLPRFNCR'#39').Value := 0;&#13' +
+          ';&#10;  TBReport.ParamByName('#39'GLPRCUCD'#39').Value := BrowseableEdit' +
+          '3.Text;            &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&' +
+          '#10;&#13;&#10;end." PropData="044C656674021503546F70020908446174' +
+          '617365747301010C2A00000020446174615365743D2254425265706F72742220' +
+          '446174615365744E616D653D2254425265706F7274220000095661726961626C' +
+          '65730100055374796C650100">'#13#10'  <TfrxDataPage Name="Data" Height="' +
+          '1000" Left="0" Top="0" Width="1000">'#13#10'    <TfrxECFAPIObject Name' +
+          '="TBReport" UserName="TBReport" CloseDataSource="True" FieldAlia' +
+          'ses.Text="GLBLSMYR=GLBLSMYR&#13;&#10;GLBLSMDT=GLBLSMDT&#13;&#10;' +
+          'GLBLACFM=GLBLACFM&#13;&#10;GLBLACNM=GLBLACNM&#13;&#10;GLBLNTBL=G' +
+          'LBLNTBL&#13;&#10;GLBLDBBL=GLBLDBBL&#13;&#10;GLBLCRBL=GLBLCRBL" A' +
+          'PIObjectName="GLS300API" APIMethodName="TRIALBALANCE" PropData="' +
+          '05704C656674021C0470546F7002200A506172616D657465727301010C250000' +
+          '00204E616D653D22474C505256575354222044617461547970653D226674496E' +
+          '74656765722200010C24000000204E616D653D22474C50524143465222204461' +
+          '7461547970653D226674537472696E672200010C24000000204E616D653D2247' +
+          '4C50524143544F222044617461547970653D226674537472696E672200010C25' +
+          '000000204E616D653D22474C505241435653222044617461547970653D226674' +
+          '496E74656765722200010C25000000204E616D653D22474C5052414350562220' +
+          '44617461547970653D226674496E74656765722200010C25000000204E616D65' +
+          '3D22474C5052464E4352222044617461547970653D226674496E746567657222' +
+          '00010C24000000204E616D653D22474C50524355434422204461746154797065' +
+          '3D226674537472696E67220000"/>'#13#10'  </TfrxDataPage>'#13#10'  <TfrxReportP' +
+          'age Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9' +
+          '" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="' +
+          '10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGui' +
+          'des.Text="">'#13#10'    <TfrxReportTitle Name="ReportTitle1" Height="6' +
+          '4.25201" Left="0" Top="16" Width="718.1107">'#13#10'      <TfrxMemoVie' +
+          'w Name="CMCPCODS" Left="3.77953" Top="0" Width="525.35467" Heigh' +
+          't="26.45671" Font.Charset="1" Font.Color="-16777208" Font.Height' +
+          '="-24" Font.Name="Arial" Font.Style="1" ParentFont="False" Text=' +
+          '"[CMCPCODS]"/>'#13#10'      <TfrxMemoView Name="Memo2" Left="3.77953" ' +
+          'Top="30.23624" Width="525.35467" Height="26.45671" DisplayFormat' +
+          '.DecimalSeparator="." Font.Charset="1" Font.Color="-16777208" Fo' +
+          'nt.Height="-19" Font.Name="Arial" Font.Style="1" ParentFont="Fal' +
+          'se" Text="TRIAL BALANCE"/>'#13#10'    </TfrxReportTitle>'#13#10'    <TfrxMas' +
+          'terData Name="MasterData1" Height="22.67718" Left="0" Top="100" ' +
+          'Width="718.1107" ColumnWidth="0" ColumnGap="0" DataSet="TBReport' +
+          '" DataSetName="TBReport" RowCount="0">'#13#10'      <TfrxMemoView Name' +
+          '="TBReportGLBLACFM" Left="3.77953" Top="0" Width="154.96073" Hei' +
+          'ght="18.89765" DataField="GLBLACFM" DataSet="TBReport" DataSetNa' +
+          'me="TBReport" Font.Charset="1" Font.Color="-16777208" Font.Heigh' +
+          't="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text' +
+          '="[TBReport.&#34;GLBLACFM&#34;]"/>'#13#10'      <TfrxMemoView Name="TB' +
+          'ReportGLBLACNM" Left="162.51979" Top="0" Width="219.21274" Heigh' +
+          't="18.89765" DataField="GLBLACNM" DataSet="TBReport" DataSetName' +
+          '="TBReport" Font.Charset="1" Font.Color="-16777208" Font.Height=' +
+          '"-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="' +
+          '[TBReport.&#34;GLBLACNM&#34;]"/>'#13#10'      <TfrxMemoView Name="TBRe' +
+          'portGLBLDBBL" Left="415.7483" Top="0" Width="1133.85826772" Heig' +
+          'ht="18.89765" DataField="GLBLDBBL" DataSet="TBReport" DataSetNam' +
+          'e="TBReport" DisplayFormat.DecimalSeparator="." DisplayFormat.Fo' +
+          'rmatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" ' +
+          'Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.' +
+          'Style="0" ParentFont="False" Text="[TBReport.&#34;GLBLDBBL&#34;]' +
+          '"/>'#13#10'      <TfrxMemoView Name="TBReportGLBLCRBL" Left="566.9295"' +
+          ' Top="0" Width="1133.85826772" Height="18.89765" DataField="GLBL' +
+          'CRBL" DataSet="TBReport" DataSetName="TBReport" DisplayFormat.De' +
+          'cimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat' +
+          '.Kind="fkNumeric" Font.Charset="1" Font.Color="-16777208" Font.H' +
+          'eight="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" ' +
+          'Text="[TBReport.&#34;GLBLCRBL&#34;]"/>'#13#10'    </TfrxMasterData>'#13#10' ' +
+          '   <TfrxPageFooter Name="PageFooter1" Height="22.67718" Left="0"' +
+          ' Top="144" Width="718.1107">'#13#10'      <TfrxMemoView Name="Memo1" L' +
+          'eft="642.5201" Top="0" Width="75.5906" Height="18.89765" HAlign=' +
+          '"haRight" Text="[Page#]"/>'#13#10'    </TfrxPageFooter>'#13#10'  </TfrxRepor' +
+          'tPage>'#13#10'  <TfrxDialogPage Name="DialogPage1" Font.Charset="1" Fo' +
+          'nt.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0"' +
+          ' BorderStyle="bsDialog" Caption="Report Options" Height="244" Le' +
+          'ft="265" Top="150" Width="429">'#13#10'    <TfrxCheckBoxControl Name="' +
+          'CheckBox1" Left="12" Top="16" Width="97" Height="17" Caption="Al' +
+          'l Account" Checked="True" State="cbsChecked" Color="-16777201" O' +
+          'nClick="CheckBox1OnClick"/>'#13#10'    <TfrxBrowseableEditControl Name' +
+          '="BrowseableEdit1" Left="64" Top="40" Width="101" Height="21" En' +
+          'abled="False" Color="-16777211" MaxLength="0" PasswordChar="0" S' +
+          'erviceName="GLS450" ReturnFieldName="GLACACFM"/>'#13#10'    <TfrxBrows' +
+          'eableEditControl Name="BrowseableEdit2" Left="192" Top="40" Widt' +
+          'h="101" Height="21" Enabled="False" Color="-16777211" MaxLength=' +
+          '"0" PasswordChar="0" ServiceName="GLS450" ReturnFieldName="GLACA' +
+          'CFM"/>'#13#10'    <TfrxLabelControl Name="Label1" Left="28" Top="44" W' +
+          'idth="28" Height="13" Caption="From:" Color="-16777201"/>'#13#10'    <' +
+          'TfrxLabelControl Name="Label2" Left="168" Top="44" Width="16" He' +
+          'ight="13" Caption="To:" Color="-16777201"/>'#13#10'    <TfrxCheckBoxCo' +
+          'ntrol Name="CheckBox2" Left="12" Top="68" Width="133" Height="17' +
+          '" Caption="Show Zero Account" WordWrap="True" Color="-16777201"/' +
+          '>'#13#10'    <TfrxCheckBoxControl Name="CheckBox3" Left="12" Top="92" ' +
+          'Width="133" Height="17" Caption="Provisional Summary" WordWrap="' +
+          'True" Color="-16777201"/>'#13#10'    <TfrxCheckBoxControl Name="CheckB' +
+          'ox4" Left="12" Top="116" Width="133" Height="17" Caption="Functi' +
+          'onal Currency" Checked="True" State="cbsChecked" Color="-1677720' +
+          '1" OnClick="CheckBox4OnClick"/>'#13#10'    <TfrxBrowseableEditControl ' +
+          'Name="BrowseableEdit3" Left="80" Top="140" Width="65" Height="21' +
+          '" Enabled="False" Color="-16777211" MaxLength="0" PasswordChar="' +
+          '0" ServiceName="CMN040" ReturnFieldName="CMCRCUCD"/>'#13#10'    <TfrxL' +
+          'abelControl Name="Label3" Left="28" Top="144" Width="48" Height=' +
+          '"13" Caption="Currency:" Color="-16777201"/>'#13#10'    <TfrxButtonCon' +
+          'trol Name="Button1" Left="124" Top="172" Width="75" Height="25" ' +
+          'Caption="OK" ModalResult="1" OnClick="Button1OnClick"/>'#13#10'    <Tf' +
+          'rxButtonControl Name="Button2" Left="208" Top="172" Width="75" H' +
+          'eight="25" Caption="Cancel" ModalResult="2"/>'#13#10'  </TfrxDialogPag' +
+          'e>'#13#10'</TfrxReport>'#13#10
+        InternalID = 34
+      end
+    end
+  end
+  object xfrRecycleDir1: TxfrRecycleDir
+    ItemType = itmRecycleDir
+    TimeStamp = 39643.621035694440000000
+    ReportName = 'Recycle Bin'
+    ReportAttr = [ftReadOnly]
+    Deleted = False
+    object xfrReportItem2: TxfrReportItem
+      ItemType = itmReport
+      TimeStamp = 39713.966821828700000000
+      ReportName = 'Untitled Report'
+      ReportAttr = []
+      Deleted = True
+      ReportID = 0
+      FileContent = 
+        '<?xml version="1.0" encoding="utf-8"?>'#13#10'<TfrxReport Version="4.1' +
+        '" DotMatrixReport="False" IniFile="\Software\Fast Reports" Previ' +
+        'ewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Pr' +
+        'inter="Default" PrintOptions.PrintOnSheet="0" ReportOptions.Crea' +
+        'teDate="39115,6589597801" ReportOptions.Description.Text="" Repo' +
+        'rtOptions.LastChange="39115,6590641204" ScriptLanguage="PascalSc' +
+        'ript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." ' +
+        'PropData="044C65667403230203546F70026908446174617365747301000956' +
+        '61726961626C65730100055374796C650100">'#13#10'  <TfrxDataPage Name="Da' +
+        'ta" Height="1000" Left="0" Top="0" Width="1000"/>'#13#10'  <TfrxReport' +
+        'Page Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="' +
+        '9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin=' +
+        '"10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGu' +
+        'ides.Text="">'#13#10'    <TfrxReportTitle Name="ReportTitle1" Height="' +
+        '22,67718" Left="0" Top="18,89765" Width="718,1107"/>'#13#10'    <TfrxM' +
+        'asterData Name="MasterData1" Height="22,67718" Left="0" Top="102' +
+        ',04731" Width="718,1107" ColumnWidth="0" ColumnGap="0" RowCount=' +
+        '"0"/>'#13#10'    <TfrxPageFooter Name="PageFooter1" Height="22,67718" ' +
+        'Left="0" Top="185,19697" Width="718,1107">'#13#10'      <TfrxMemoView ' +
+        'Name="Memo1" Left="642,5201" Top="0" Width="75,5906" Height="18,' +
+        '89765" HAlign="haRight" Text="[Page#]"/>'#13#10'    </TfrxPageFooter>'#13 +
+        #10'  </TfrxReportPage>'#13#10'</TfrxReport>ort>ort>ort>'
+      OldOwner = 'xfrDirectoryItem1'
+      InternalID = 36
+    end
+    object xfrReportItem5: TxfrReportItem
+      ItemType = itmReport
+      TimeStamp = 39766.990346851850000000
+      ReportName = 'Untitled Report (1)'
+      ReportAttr = []
+      Deleted = True
+      ReportID = 0
+      FileContent = 
+        '<?xml version="1.0" encoding="utf-8"?>'#13#10'<TfrxReport Version="4.1' +
+        '" DotMatrixReport="False" IniFile="\Software\Fast Reports" Previ' +
+        'ewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Pr' +
+        'inter="Default" PrintOptions.PrintOnSheet="0" ReportOptions.Crea' +
+        'teDate="39115,6589597801" ReportOptions.Description.Text="" Repo' +
+        'rtOptions.LastChange="39115,6590641204" ScriptLanguage="PascalSc' +
+        'ript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." ' +
+        'PropData="044C65667403230203546F70026908446174617365747301000956' +
+        '61726961626C65730100055374796C650100">'#13#10'  <TfrxDataPage Name="Da' +
+        'ta" Height="1000" Left="0" Top="0" Width="1000"/>'#13#10'  <TfrxReport' +
+        'Page Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="' +
+        '9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin=' +
+        '"10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGu' +
+        'ides.Text="">'#13#10'    <TfrxReportTitle Name="ReportTitle1" Height="' +
+        '22,67718" Left="0" Top="18,89765" Width="718,1107"/>'#13#10'    <TfrxM' +
+        'asterData Name="MasterData1" Height="22,67718" Left="0" Top="102' +
+        ',04731" Width="718,1107" ColumnWidth="0" ColumnGap="0" RowCount=' +
+        '"0"/>'#13#10'    <TfrxPageFooter Name="PageFooter1" Height="22,67718" ' +
+        'Left="0" Top="185,19697" Width="718,1107">'#13#10'      <TfrxMemoView ' +
+        'Name="Memo1" Left="642,5201" Top="0" Width="75,5906" Height="18,' +
+        '89765" HAlign="haRight" Text="[Page#]"/>'#13#10'    </TfrxPageFooter>'#13 +
+        #10'  </TfrxReportPage>'#13#10'</TfrxReport>ort>ort>ort>ort>'
+      OldOwner = 'xfrDirectoryItem1'
+      InternalID = 38
+    end
+    object xfrReportItem4: TxfrReportItem
+      ItemType = itmReport
+      TimeStamp = 39722.042135775460000000
+      ReportName = 'Untitled Report'
+      ReportAttr = []
+      Deleted = True
+      ReportID = 0
+      FileContent = 
+        '<?xml version="1.0" encoding="utf-8"?>'#13#10'<TfrxReport Version="4.5' +
+        '" DotMatrixReport="True" IniFile="\Software\Fast Reports" Previe' +
+        'wOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Pri' +
+        'nter="Default" PrintOptions.PrintOnSheet="0" ReportOptions.Creat' +
+        'eDate="39722.042018044" ReportOptions.Description.Text="" Report' +
+        'Options.LastChange="39722.0420661458" ScriptLanguage="PascalScri' +
+        'pt" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="04' +
+        '4C656674021503546F7002090844617461736574730100095661726961626C65' +
+        '730100055374796C650100">'#13#10'  <TfrxDataPage Name="Data" Height="10' +
+        '00" Left="0" Top="0" Width="1000"/>'#13#10'  <TfrxDMPPage Name="Page1"' +
+        ' PaperWidth="215.899860564673" PaperHeight="278.87065322937" Pap' +
+        'erSize="1" LeftMargin="2.53999835958439" RightMargin="2.53999835' +
+        '958439" TopMargin="4.49791376176403" BottomMargin="4.49791376176' +
+        '403" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGu' +
+        'ides.Text="" FontStyle="0"/>'#13#10'</TfrxReport>'#13#10#197#8220#194#164'}'#8220#194#164'}'
+      OldOwner = 'xfrDirectoryItem1'
+      InternalID = 37
+    end
+  end
+end

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TMvcReport Version="4.7.181" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40123.4325056018" ReportOptions.Description.Text="" ReportOptions.LastChange="40129.5299797454" ReportOptions.MvcServiceName="CMN130" ReportOptions.MvcDescription="Departments" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="0844617461736574730101062820446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D220001062620446174615365743D2254424C6973742220446174615365744E616D653D2254424C697374220001062820446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="Dialog1" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" ClientHeight="298" Left="265" Top="150" ClientWidth="490">
+    <TMvcLabelControl Name="Label1" Left="8" Top="16" Width="97" Height="13" ShowHint="True" Caption="List of departments:" Color="-16777201"/>
+    <TMvcDBGrid Name="CMN130VW" Left="8" Top="32" Width="472" Height="260" ShowHint="True" Dataset="TBList" Align="alNone" Anchors="15" ColumnAutoWidth="True"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="CMN130ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" ClientHeight="280" Left="265" Top="150" ClientWidth="577">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="12" Top="44" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPDPNO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit6" Left="96" Top="16" Width="45" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPCONO" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="68" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPDPNM" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit7" Left="232" Top="16" Width="45" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPDVNO" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="12" Top="92" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPDPDS" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="96" Top="40" Width="97" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPDPNO" MaxLength="6" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="12" Top="124" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPFANO" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="96" Top="64" Width="281" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPDPNM" MaxLength="24" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="96" Top="88" Width="329" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPDPDS" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="12" Top="148" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPLCNO" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit1" Left="96" Top="120" Width="97" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPFANO" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit4" Left="196" Top="120" Width="281" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPFANM" MaxLength="24" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption6" Left="12" Top="20" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPCONO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit2" Left="96" Top="144" Width="97" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPLCNO" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption7" Left="148" Top="20" Width="78" Height="13" ShowHint="True" Dataset="TBInput" DataField="CMDPDVNO" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit5" Left="196" Top="144" Width="281" Height="21" ShowHint="True" Dataset="TBInput" Color="-16777211" DataField="CMDPLCNM" MaxLength="24" PasswordChar="0"/>
+  </TMvcDialogPage>
+</TMvcReport>

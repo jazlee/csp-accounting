@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jaimy Azle <jazle@sat.net.id>\n"
+
+msgid "Refresh"
+msgstr "Segarkan"
+
+msgid "List of Users:"
+msgstr "Daftar pengguna:"
+
+msgid "Status"
+msgstr ""
+
+msgid "User Name"
+msgstr "Nama pengguna"
+
+msgid "First Name"
+msgstr "Nama awal"
+
+msgid "Last Name"
+msgstr "Nama akhir"
+
+msgid "Description"
+msgstr "Deskripsi"
+
+msgid "Password"
+msgstr "Kata kunci"
+
+msgid "E-Mail"
+msgstr ""
+

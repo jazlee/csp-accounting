@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+msgid "List of available Fields:"
+msgstr "Daftar field yang tersedia:"
+
+msgid "Service Name"
+msgstr "Nama servis API"
+
+msgid "Method"
+msgstr "Metode"
+
+msgid "Field Name"
+msgstr ""
+
+msgid "Description"
+msgstr "Deskripsi"
+
+msgid "Type"
+msgstr "Tipe"
+
+msgid "Size"
+msgstr "Ukuran"
+
+msgid "Precision"
+msgstr "Presisi"
+
+msgid "Decimal"
+msgstr "Desimal"
+
+msgid "Required"
+msgstr "Dibutuhkan"
+

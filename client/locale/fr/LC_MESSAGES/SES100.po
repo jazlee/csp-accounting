@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+msgid "List of available entries:"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "User Name"
+msgstr "User name"
+
+msgid "MVC Service"
+msgstr "MVC service"
+
+msgid "Description"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Insert"
+msgstr ""
+
+msgid "Update"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Execute"
+msgstr ""
+

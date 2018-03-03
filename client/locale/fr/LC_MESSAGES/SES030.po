@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+
+msgid "List of available API services:"
+msgstr ""
+
+msgid "Open API Functions list"
+msgstr "Open API function list"
+
+msgid "Service Name"
+msgstr "API Service name"
+
+msgid "Description"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+

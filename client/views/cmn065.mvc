@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39562.9352446759" ReportOptions.Description.Text="" ReportOptions.LastChange="39568.3714028125" ReportOptions.MvcServiceName="CMN065" ReportOptions.MvcDescription="U/M Conversion Table" ReportOptions.Category="System Foundation\Common Basic Data" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;&#13;&#10;procedure Button1OnClick(Sender: TMvcComponent);&#13;&#10;begin&#13;&#10;  PerformUpdateState;                                      &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E7075742200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="CVUMUMCD=CVUMUMCD&#13;&#10;CVUMALCD=CVUMALCD" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="CVUMUMCD=CVUMUMCD&#13;&#10;CVUMUMNM=CVUMUMNM&#13;&#10;CVUMALCD=CVUMALCD&#13;&#10;CVUMALNM=CVUMALNM&#13;&#10;CVUMCVFA=CVUMCVFA&#13;&#10;CVUMCVFR=CVUMCVFR" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="CVUMUMCD=CVUMUMCD&#13;&#10;CVUMUMNM=CVUMUMNM&#13;&#10;CVUMALCD=CVUMALCD&#13;&#10;CVUMALNM=CVUMALNM&#13;&#10;CVUMCVFA=CVUMCVFA&#13;&#10;CVUMCVFR=CVUMCVFR&#13;&#10;CVUMCVRV=CVUMCVRV" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="CMN065VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="285" Left="265" Top="150" Width="523">
+    <TMvcLabelControl Name="Label1" Left="8" Top="36" Width="105" Height="13" Caption="U/M Conversion Table" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="52" Width="500" Height="188" Dataset="TBList" Align="alNone" Anchors="15"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="8" Top="12" Width="78" Height="13" Dataset="TBParam" DataField="CVUMUMCD" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit1" Left="92" Top="8" Width="53" Height="21" Dataset="TBParam" Color="-16777211" DataField="CVUMUMCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="152" Top="12" Width="78" Height="13" Dataset="TBParam" DataField="CVUMALCD" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit2" Left="236" Top="8" Width="53" Height="21" Dataset="TBParam" Color="-16777211" DataField="CVUMALCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcButtonControl Name="Button1" Left="300" Top="8" Width="75" Height="25" Caption="Refresh" OnClick="Button1OnClick"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="CMN065ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="266" Left="265" Top="150" Width="581">
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="8" Top="12" Width="78" Height="13" Dataset="TBInput" DataField="CVUMUMCD" Caption="DBFieldCaption3" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit3" Left="92" Top="8" Width="53" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMUMCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="8" Top="36" Width="78" Height="13" Dataset="TBInput" DataField="CVUMALCD" Caption="DBFieldCaption3" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="148" Top="8" Width="189" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMUMNM" MaxLength="16" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="8" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="CVUMCVFA" Caption="DBFieldCaption5" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit4" Left="92" Top="32" Width="53" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMALCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption6" Left="216" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="CVUMCVFR" Caption="DBFieldCaption6" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="148" Top="32" Width="189" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMALNM" MaxLength="16" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="92" Top="56" Width="117" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMCVFA" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBComboBoxControl Name="DBComboBox1" Left="300" Top="56" Width="109" Height="21" Dataset="TBInput" Color="-16777211" DataField="CVUMCVFR" Items.Text="" Values.Text="" Style="lsEditFixedList" ItemIndex="-1"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox1" Left="92" Top="84" Width="209" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="CVUMCVRV" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+  </TMvcDialogPage>
+</TMvcReport>

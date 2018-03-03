@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39594.5371589236" ReportOptions.Description.Text="" ReportOptions.LastChange="39594.542607963" ReportOptions.ModuleType="mtSingleEdit" ReportOptions.MvcServiceName="CMN405" ReportOptions.MvcDescription="Create System Calendar" ReportOptions.Category="System Foundation\Common Basic Data" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D2200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="CMN405ED" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="381" Left="265" Top="150" Width="677">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="12" Top="16" Width="78" Height="13" Dataset="TBInput" DataField="SYCLCLYR" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="96" Top="12" Width="61" Height="21" Dataset="TBInput" Color="-16777211" DataField="SYCLCLYR" MaxLength="0" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="40" Width="78" Height="13" Dataset="TBInput" DataField="SYCLCLDS" Caption="DBFieldCaption1" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="96" Top="36" Width="401" Height="21" Dataset="TBInput" Color="-16777211" DataField="SYCLCLDS" MaxLength="48" PasswordChar="0"/>
+    <TMvcGroupBoxControl Name="GroupBox1" Left="16" Top="68" Width="193" Height="81" Caption="Monday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox1" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD0" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox2" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD0" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox3" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD0" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox2" Left="220" Top="68" Width="193" Height="81" Caption="Tuesday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox4" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD1" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox5" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD1" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox6" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD1" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox3" Left="424" Top="68" Width="193" Height="81" Caption="Wednesday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox7" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD2" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox8" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD2" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox9" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD2" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox4" Left="16" Top="152" Width="193" Height="81" Caption="Thursday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox10" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD3" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox11" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD3" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox12" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD3" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox5" Left="220" Top="152" Width="193" Height="81" Caption="Friday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox13" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD4" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox14" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD4" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox15" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD4" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox6" Left="424" Top="152" Width="193" Height="81" Caption="Saturday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox16" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD5" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox17" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD5" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox18" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD5" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+    <TMvcGroupBoxControl Name="GroupBox7" Left="16" Top="236" Width="193" Height="81" Caption="Sunday" Color="-16777201">
+      <TMvcDBCheckBoxControl Name="DBCheckBox19" Left="12" Top="16" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCWD6" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox20" Left="12" Top="36" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCBD6" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+      <TMvcDBCheckBoxControl Name="DBCheckBox21" Left="12" Top="56" Width="165" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="SYCLCPD6" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+    </TMvcGroupBoxControl>
+  </TMvcDialogPage>
+</TMvcReport>

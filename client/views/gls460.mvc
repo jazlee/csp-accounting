@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TMvcReport Version="4.5" DotMatrixReport="False" IniFile="\Software\MVC Framework" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39641.678436956" ReportOptions.Description.Text="" ReportOptions.LastChange="39641.9264060648" ReportOptions.MvcServiceName="GLS460" ReportOptions.MvcDescription="Account Set" ReportOptions.Category="Financial Management\General Ledger" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="08446174617365747301010C2800000020446174615365743D225442506172616D2220446174615365744E616D653D225442506172616D2200010C2600000020446174615365743D2254424C6973742220446174615365744E616D653D2254424C6973742200010C2800000020446174615365743D225442496E7075742220446174615365744E616D653D225442496E707574220000095661726961626C65730100055374796C650100">
+  <TMvcDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TMvcMemoryDataset Name="TBParam" UserName="TBParam" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtParam" PropData="05704C65667402280470546F70021A"/>
+    <TMvcMemoryDataset Name="TBList" UserName="TBList" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtList" PropData="05704C65667402500470546F70021A"/>
+    <TMvcMemoryDataset Name="TBInput" UserName="TBInput" CloseDataSource="True" FieldAliases.Text="" DatasetType="dtInput" PropData="05704C65667402780470546F70021A"/>
+  </TMvcDataPage>
+  <TMvcDialogPage Name="GLS460VW" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Height="338" Left="265" Top="150" Width="613">
+    <TMvcDBFieldCaption Name="DBFieldCaption1" Left="8" Top="8" Width="77" Height="13" Caption="Account Set List" Color="-16777201"/>
+    <TMvcDBGrid Name="DBGrid1" Left="8" Top="24" Width="592" Height="272" Dataset="TBList" Align="alNone" Anchors="15"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="GLS460EDA" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="326" Left="265" Top="150" Width="550">
+    <TMvcDBFieldCaption Name="DBFieldCaption2" Left="12" Top="16" Width="78" Height="13" Dataset="TBInput" DataField="GLACSTNM" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit1" Left="96" Top="12" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLACSTNM" MaxLength="6" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption3" Left="12" Top="40" Width="78" Height="13" Dataset="TBInput" DataField="GLACSTDS" Caption="DBFieldCaption2" Color="-16777201"/>
+    <TMvcDBEditControl Name="DBEdit2" Left="96" Top="36" Width="265" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLACSTDS" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBCheckBoxControl Name="DBCheckBox1" Left="96" Top="60" Width="97" Height="21" Dataset="TBInput" Caption="DBCheckBox1" State="cbsGrayed" DataField="GLACACST" ValueChecked="1" ValueUnchecked="0" Color="-16777201"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="GLS460EDB" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="356" Left="265" Top="150" Width="626">
+    <TMvcDBFieldCaption Name="DBFieldCaption4" Left="8" Top="36" Width="78" Height="13" Dataset="TBInput" DataField="GLARCUCD" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit1" Left="148" Top="32" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARCUCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption5" Left="8" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLARCTFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit2" Left="148" Top="56" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARCTFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit3" Left="248" Top="56" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARCTNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption6" Left="8" Top="84" Width="78" Height="13" Dataset="TBInput" DataField="GLARDCFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit3" Left="148" Top="80" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARDCFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit4" Left="248" Top="80" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARDCNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption7" Left="8" Top="108" Width="78" Height="13" Dataset="TBInput" DataField="GLARPPFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit4" Left="148" Top="104" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARPPFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit5" Left="248" Top="104" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARPPNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption8" Left="8" Top="132" Width="78" Height="13" Dataset="TBInput" DataField="GLARWOFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit5" Left="148" Top="128" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARWOFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit6" Left="248" Top="128" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARWONM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption9" Left="8" Top="160" Width="78" Height="13" Dataset="TBInput" DataField="GLARGXFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit6" Left="148" Top="156" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARGXFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit7" Left="248" Top="156" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARGXNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption10" Left="8" Top="184" Width="78" Height="13" Dataset="TBInput" DataField="GLARLXFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit7" Left="148" Top="180" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARLXFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit8" Left="248" Top="180" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARLXNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption11" Left="8" Top="208" Width="78" Height="13" Dataset="TBInput" DataField="GLARGRFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit8" Left="148" Top="204" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARGRFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit9" Left="248" Top="204" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARGRNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption12" Left="8" Top="232" Width="78" Height="13" Dataset="TBInput" DataField="GLARLRFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit9" Left="148" Top="228" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARLRFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit10" Left="248" Top="228" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLARLRNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcLabelControl Name="Label1" Left="8" Top="8" Width="108" Height="13" Caption="*** A/R OPTIONS ***" Color="-16777201"/>
+  </TMvcDialogPage>
+  <TMvcDialogPage Name="GLS460EDC" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" DialogType="dtEdit" Height="349" Left="235" Top="127" Width="618">
+    <TMvcDBFieldCaption Name="DBFieldCaption13" Left="8" Top="36" Width="78" Height="13" Dataset="TBInput" DataField="GLAPCUCD" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit10" Left="148" Top="32" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPCUCD" MaxLength="3" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption14" Left="8" Top="60" Width="78" Height="13" Dataset="TBInput" DataField="GLAPCTFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit11" Left="148" Top="56" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPCTFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit11" Left="248" Top="56" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPCTNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption15" Left="8" Top="84" Width="78" Height="13" Dataset="TBInput" DataField="GLAPDCFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit12" Left="148" Top="80" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPDCFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit12" Left="248" Top="80" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPDCNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption16" Left="8" Top="108" Width="78" Height="13" Dataset="TBInput" DataField="GLAPPPFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit13" Left="148" Top="104" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPPPFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit13" Left="248" Top="104" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPPPNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption18" Left="8" Top="160" Width="78" Height="13" Dataset="TBInput" DataField="GLAPGXFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit15" Left="148" Top="156" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPGXFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit15" Left="248" Top="156" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPGXNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption19" Left="8" Top="184" Width="78" Height="13" Dataset="TBInput" DataField="GLAPLXFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit16" Left="148" Top="180" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPLXFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit16" Left="248" Top="180" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPLXNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption20" Left="8" Top="208" Width="78" Height="13" Dataset="TBInput" DataField="GLAPGRFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit17" Left="148" Top="204" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPGRFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit17" Left="248" Top="204" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPGRNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcDBFieldCaption Name="DBFieldCaption21" Left="8" Top="232" Width="78" Height="13" Dataset="TBInput" DataField="GLAPLRFM" Caption="DBFieldCaption4" Color="-16777201"/>
+    <TMvcDBButtonEditControl Name="DBButtonEdit18" Left="148" Top="228" Width="97" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPLRFM" MaxLength="48" PasswordChar="0"/>
+    <TMvcDBEditControl Name="DBEdit18" Left="248" Top="228" Width="297" Height="21" Dataset="TBInput" Color="-16777211" DataField="GLAPLRNM" MaxLength="32" PasswordChar="0"/>
+    <TMvcLabelControl Name="Label2" Left="8" Top="8" Width="107" Height="13" Caption="*** A/P OPTIONS ***" Color="-16777201"/>
+  </TMvcDialogPage>
+</TMvcReport>
